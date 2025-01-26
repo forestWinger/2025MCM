@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{ctex}  % 包含中文支持
+
+\begin{document}
+
+\begin{equation}
+y = A \cdot X
+\end{equation}
+
+\begin{equation}
+A = \beta_0 \cdot A' + \Sigma_e \beta_1 (Pne - Pne') + \Sigma_e \beta_2 \cdot Pne \cdot 1_{\{m=1\}} + \beta_3 \cdot A_{new} \cdot 1_{\{n=1\}} + \dots
+\end{equation}
+
+\textbf{变量:}
+\begin{itemize}
+    \item $y$: 奖牌数
+    \item $A$: 各个国家各discipline得奖比例
+    \item $X$: 各 discipline events数量（已知）
+    \item $A'$: 上届的 $A$
+    \item $Pne$: 本届项目e参赛人数
+    \item $Pne'$: 上届项目e参赛人数
+    \item $m=1$: 代表为“夺金点”
+    \item $A_{new}$: 东道主的优势夺金矩阵
+    \item $h=1$: 代表为“东道主”
+\end{itemize}
+
+\end{document}
